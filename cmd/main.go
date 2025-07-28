@@ -2,7 +2,7 @@ package main
 
 import (
 	"RalfDalfs/go-fiber/config"
-	"RalfDalfs/go-fiber/internal/home"
+	"RalfDalfs/go-fiber/internal/pages"
 	"github.com/gofiber/fiber/v3"
 	"github.com/gofiber/fiber/v3/middleware/recover"
 	"log"
@@ -15,7 +15,7 @@ func main() {
 	app := fiber.New()
 	app.Use(recover.New())
 
-	home.NewHandler(app)
+	pages.NewHandler(app)
 
 	app.Listen(":3000")
 }

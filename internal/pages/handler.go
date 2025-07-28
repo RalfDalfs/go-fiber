@@ -1,4 +1,4 @@
-package home
+package pages
 
 import "github.com/gofiber/fiber/v3"
 
